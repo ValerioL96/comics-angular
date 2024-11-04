@@ -1,0 +1,17 @@
+.contact-list {
+  ul {
+    list-style-type: none;
+    li {
+      color: hsl(0deg 0% 47.45%);
+    }
+  }
+}
+
+.nav-socials {
+  button {
+    &:hover {
+      background-color: #1c3b5a;
+      border-color: #1c3b5a;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<section class="flex bg-center bg-cover contact-list" style="background-image: url('/img/footer-bg.jpg')">
+  <div class="p-5 text-white comics">
+    <ul>
+      <h3 class="text-lg font-semibold">DC COMICS</h3>
+      <li *ngFor="let link of navBarList" class="text-gray-400">{{ link.title }}</li>
+    </ul>
+    <ul class="mt-4">
+      <h3 class="text-lg font-semibold">SHOP</h3>
+      <li *ngFor="let shop of shopList" class="text-gray-400">{{ shop.name }}</li>
+    </ul>
+  </div>
+
+  <ul class="p-5 text-white">
+    <h3 class="text-lg font-semibold">DC</h3>
+    <li *ngFor="let link of dcList" class="text-gray-400">{{ link.title }}</li>
+  </ul>
+
+  <ul class="p-5 text-white">
+    <h3 class="text-lg font-semibold">SITES</h3>
+    <li *ngFor="let site of sitesList" class="text-gray-400">{{ site.site_name }}</li>
+  </ul>
+
+  <img src="/img/dc-logo-bg.png" alt="logo-footer" class="object-cover mx-auto my-auto max-h-45">
+
+</section>
+
+<section class="flex justify-between p-5 bg-gray-800 nav-socials">
+  <button class="px-4 py-2 text-white bg-transparent border border-blue-500">Sign-Up Now</button>
+  <nav class="flex items-center">
+    <h3 class="mr-3 text-blue-500">Follow Us</h3>
+    <ul class="flex space-x-3">
+      <li *ngFor="let social of socialsList">
+        <img [src]="social.image" alt="social-icon" class="w-6">
+      </li>
+    </ul>
+  </nav>
+</section>
+
