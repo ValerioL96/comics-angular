@@ -1,10 +1,10 @@
-<h2>- ->Content goes here<- - </h2>
-<nav>
-  <ul>
-    <li *ngFor="let comic of navBarComics">
-      <img [src]="comic.image" [alt]="comic.text">
+<nav class="flex px-20 py-8 text-white bg-blue-600 justify-evenly">
+  <ul class="flex space-x-8">
+    <li *ngFor="let comic of navBarComics" class="flex items-center space-x-2">
+      <img [src]="comic.image" [alt]="comic.text" class="w-8 h-10" />
       <p>{{ comic.text }}</p>
     </li>
   </ul>
 </nav>
+<div class="py-8 bg-gray-900 "><app-product-list></app-product-list> </div>
 

@@ -1,0 +1,16 @@
+<section class="flex flex-col w-4/5 mx-auto mt-16">
+  <article class="flex flex-wrap justify-center">
+    <div *ngFor="let item of itemList" class="p-4 m-4 bg-white border border-gray-300 rounded shadow-lg w-60">
+      <img [src]="item.thumb" alt="{{ item.series }}" class="object-cover w-full h-40 rounded-t">
+      <div class="p-2">
+        <h3 class="text-lg font-semibold">{{ item.series }}</h3>
+        <p class="text-gray-700">{{ item.type }}</p>
+        <p class="font-bold text-blue-600">{{ item.price }}</p>
+      </div>
+    </div>
+  </article>
+  <div class="self-center p-2 mt-4 mb-4 bg-blue-600">
+    <p class="text-center text-white uppercase">Load more</p>
+  </div>
+</section>
+
